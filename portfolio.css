@@ -1,20 +1,20 @@
 :root {
     --branding-color: black;
     --secondary-color: #f0f0f0;
-    --heading-font-family:"Playfair Display",serif;
+    --heading-font-family:"Yeseva One", serif;
     --default-font-family: "Poppins", sans-serif;
 }
 
 body {
     font-family: var(--default-font-family);
+    background-color: var(--branding-color);
 }
-h1,
-h2,
-h3,
-h4,
+h2{
+    color:var(--secondary-color);
+}
 h5,
 h6 {
-    color:black;
+    color:var(--branding-color);
     font-family: var(--heading-font-family);
     font-weight: bold;
 }
@@ -24,12 +24,14 @@ h1 {
     line-height: 1.5;
 }
 
-h2 {
+.hero-subtitle{
     font-size: 64px;
+    color: var(--secondary-color);
 }
  
 p {
     font-weight: normal;
+    color: var(--branding-color);
     font-size: 16px;
     line-height: 30px;
 }
@@ -56,6 +58,7 @@ p {
 
 .content-container {
     padding: 160px 20px;
+    color: var(--branding-color);
 }
 
 .content h1 {
@@ -97,8 +100,8 @@ p {
 }
 
 .btn-branding-outline {
-    color: var(--branding-color);
-    border: 1px solid var(--branding-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
@@ -127,17 +130,17 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color:black;
+    color:white;
     transition: all 100ms;
 }
 
 nav a:hover, 
     nav li.active a {
-        color: var(--branding-color);
+        color: var(--secondary-color);
     }
 
     footer {
-        margin: 60px 0;
+        margin:60px 0;
     }
 
     footer .contact-box {
@@ -145,28 +148,33 @@ nav a:hover,
         padding: 30px 120px;
         border-radius: 10px;
     }
-    footer .contact-box p {
+
+    footer .contact-box p{
         margin: 0;
     }
 
     footer .email-link {
         text-decoration: none;
         color: black;
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 25px;
     }
 
     footer .email-link:hover {
-        color: var(--branding-color);
+        color: #6c63ff;
     }
 
-    footer .social-links a {
-        margin-right: 50px;
-        font-size: 32px;
-        color:var(--branding-color);
+    footer .social-links a{
+        margin: 0 20px;
+        color: var(--branding-color);
         background: var(--secondary-color);
-        padding: 40px 14px;
+        padding: 10px 10px;
         border-radius: 50%;
+        font-size: 30px;
+        transition: all 100ms ease-in-out;
+    }
+
+    footer .social-links a:hover {
+        color: #6c63ff;
     }
 
 @media (max-width:900px) {
